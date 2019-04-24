@@ -1,0 +1,202 @@
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	height: 107px;
+	max-width: 1108px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background: linear-gradient(90deg, rgba(27,65,158,1) 0%, rgba(85,64,194,1) 50%, rgba(23,117,221,1) 100%);
+	display: flex;
+}
+
+p{
+	margin: 0;
+	text-align: center;
+}
+
+.first-three-flex{
+	display: flex;
+	margin-left: 15px;
+}
+
+.city-name, p {
+	display: block;
+}
+.pirmas-blokas {
+	display: flex;
+	margin-right: 15px;
+}
+
+.maxmindegrees {
+	display: flex;
+	font-size: 0.8rem;
+}
+
+.main-weather-icon {
+	margin: 30px 20px;
+}
+
+.weekdays {
+	padding-right: 35px;
+	padding-left: 50px;
+	padding-top: 10px;
+}
+.city-name-block {
+	margin-top: 36px;
+	margin-bottom: 30px;
+	margin-right: 30px;
+	margin-left: 20px;
+	color: white;
+}
+.city-name{
+	font-weight: 700;
+	text-transform: uppercase;
+	width: 80px
+}
+.city-name-block p{
+	font-size: 0.8rem;
+}
+
+.main-temp-block{
+	margin-top: 32px;
+	margin-right: 30px;
+	margin-left: 30px;
+	color: white;
+}
+.main-temperature{
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-align: center;
+}
+.day-of-the-week{
+	color: white;
+	text-align: center;
+	font-size: 0.9rem;
+}
+
+.day-icon img{
+	margin: 0 5px;
+}
+
+.day-max-temp{
+	color: #b97575;
+}
+
+.day-min-temp{
+	color: #aeaef3;
+	margin-left: 15px;
+}
+
+.weather-description{
+	font-size: 0.9rem;
+	text-align: center;
+}
+.days-block{
+	display: flex;
+}
+.resp-class{
+	display: flex;
+}
+
+@media all and (max-width: 860px){
+	.container{
+		height: 118px;
+		max-width: 857px;
+	}
+	.weekdays {
+		padding-right: 30px;
+		padding-left: 5px;
+		padding-top: 5px;
+	}
+	.maxmindegrees{
+		display: block;
+	}
+	.day-max-temp{
+		text-align: center;
+	}
+	.day-min-temp{
+		margin-left: 0;
+		text-align: center;
+	}
+	.day-icon img:nth-of-type(1){
+		padding-left: 5px;
+	}
+	.day-of-the-week{
+		font-size: 0.7rem;
+	}
+	.city-name-block{
+		margin-right: 0;
+	}
+	
+}
+@media all and (max-width: 660px){
+	.container{
+		height: 217px;
+		max-width: 660px;
+		display: block;
+	}
+	.days-block{
+		justify-content: space-between;
+		padding-left: 15px;
+	}
+	.first-three-flex{
+		margin-bottom: -5px;
+		justify-content: space-around;
+	}
+}
+@media all and (max-width: 326px){
+	.container{
+		height: 420px;
+		max-width: 326px;
+		display: block;
+	}
+	.first-three-flex{
+		display: block;
+	}
+	.days-block{
+		display: block;
+		margin-top: 10px;
+	}
+	.day-block{
+		display: flex;
+		justify-content: space-between;
+	}
+	.maxmindegrees{
+		display: flex;
+		margin-top: 10px;
+	}
+	.day-max-temp{
+		margin-right: 45px;
+	}
+	.day-of-the-week{
+		margin-top: 10px;
+	}
+	.resp-class{
+		display: flex;
+		justify-content: space-around;
+	}
+	.pirmas-blokas{
+		display: block;
+	}
+	.city-name-block{
+		margin-top: 0;
+		margin-bottom: 5px;
+		margin-left: 0;
+	}
+	.main-weather-icon{
+		margin-bottom: 5px;
+	}
+	.city-name{
+		text-align: center;
+		width: 100%;
+	}
+}
